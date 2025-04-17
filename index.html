@@ -1,56 +1,89 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV - Nguyễn Văn A</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .cv-container {
+      max-width: 850px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      border-left: 5px solid #0d6efd;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .project-title {
+      font-weight: bold;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-<body class="bg-light">
-  <div class="container mt-5">
-    <div class="card shadow p-4">
-      <div class="row">
-        <!-- Avatar -->
-        <div class="col-md-4 text-center">
-          <img src="assets/profile.jpg" alt="Avatar" class="img-fluid rounded-circle shadow" style="max-width: 200px;">
-        </div>
-        <!-- Info -->
-        <div class="col-md-8">
-          <h1 class="text-primary">Nguyễn Văn A</h1>
-          <p><strong>Email:</strong> nguyenvana@example.com</p>
-          <p><strong>Điện thoại:</strong> 0123-456-789</p>
-          <p><strong>Địa chỉ:</strong> TP. Hà Nội</p>
-          <hr/>
-          <h4>Giới thiệu</h4>
-          <p>Mình là một lập trình viên web yêu thích làm việc với Vue.js, .NET và các công nghệ hiện đại.</p>
-        </div>
+<body>
+  <div class="cv-container">
+    <div class="d-flex align-items-center mb-4">
+      <img src="assets/profile.jpg" alt="Profile" class="profile-pic me-4">
+      <div>
+        <h3 class="mb-0">Tu Tấn Chung</h3>
+        <p class="text-muted">Web Developer (Intern)</p>
       </div>
+    </div>
 
-      <hr class="my-4" />
+    <div class="mb-4">
+      <h5 class="section-title">SUMMARY</h5>
+      <p>I am currently a final-year Information Technology student at Ho Chi Minh Education UniversityUniversity, seeking an internship opportunity to enhance my skills...</p>
+    </div>
 
-      <h4>Kỹ năng</h4>
+    <div class="mb-4">
+      <h5 class="section-title">EDUCATION</h5>
+      <p><strong>Ho Chi Minh Education University, Hồ Chí Minh</strong><br>
+        Web Development | Aug 2022 – Present | GPA: 2.9</p>
+    </div>
+
+    <div class="mb-4">
+      <h5 class="section-title">SKILL</h5>
       <ul>
-        <li>HTML, CSS, JavaScript, Bootstrap</li>
-        <li>Vue.js, React, Node.js</li>
-        <li>ASP.NET Core, SQL Server</li>
+        <li>Front-end: HTML, CSS, JavaScript, ReactJS, Bootstrap</li>
+        <li>Back-end: Node.js (Express), PHP (Laravel)</li>
+        <li>Database: MySQL, SQLSever</li>
+        <li>Tools: Postman, GitHub, AI, Figma</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h5 class="section-title">PROJECT</h5>
+
+      <p class="project-title">Laptop E-commerce Website <span class="text-muted">(March 2025 – Present)</span></p>
+      <p><strong>Role:</strong> Member | <strong>Team size:</strong> 6</p>
+      <p><strong>Description:</strong> Website uses Node.js (Express) and MongoDB, ReactJS, TypeScript, Bootstrap...</p>
+      <ul>
+        <li>CRUD products, best-selling items, JWT authentication.</li>
+        <li>Add to cart, track orders, manage quantity.</li>
       </ul>
 
-      <h4>Học vấn</h4>
-      <p>Đại học Bách Khoa Hà Nội - Công nghệ thông tin (2019 - 2023)</p>
-
-      <h4>Kinh nghiệm</h4>
-      <p><strong>Công ty ABC</strong> - Thực tập sinh lập trình Web (6/2022 - 12/2022)</p>
-      <p>Phát triển website quản lý sinh viên, áp dụng Vue.js và .NET.</p>
-
-      <h4>Dự án cá nhân</h4>
+      <p class="project-title mt-3">Backpack Store Web <span class="text-muted">(Nov 2024 – Dec 2024)</span></p>
+      <p><strong>Role:</strong> Leader | <strong>Team size:</strong> 4</p>
+      <p><strong>Description:</strong> Built on PHP MVC, with Bootstrap and MySQL...</p>
       <ul>
-        <li><strong>Website Quản Lý Sinh Viên</strong> - Vue + SQL Server</li>
-        <li><strong>Portfolio cá nhân</strong> - React + Firebase</li>
+        <li>Login/Register, Product/User management.</li>
+        <li>Search, add to cart, and order tracking.</li>
       </ul>
-
     </div>
   </div>
 </body>
 </html>
-
